@@ -1,0 +1,184 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+@keyframes mover {
+  0% {
+    transform: translateY(3px); }
+  100% {
+    transform: translateY(-5px); } }
+@keyframes glow {
+  0% {
+    opacity: 0;
+    transform: scale(0.5); }
+  50% {
+    opacity: 1;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(0.5); } }
+@keyframes mover2 {
+  0% {
+    transform: translateY(-3px); }
+  100% {
+    transform: translateY(5px); } }
+.rb-bner__rewards {
+  font-family: Be Vietnam Pro, sans-serif;
+  background: url("../img/reb-rwbg-web.jpg") center center no-repeat;
+  background-size: cover; }
+  .rb-bner__rewards img {
+    width: 100%;
+    display: block;
+    height: auto; }
+  .rb-bner__rewards .bner-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .rb-bner__rewards .reb-icn__left {
+    position: relative;
+    width: 105px;
+    display: flex;
+    align-items: stretch; }
+    .rb-bner__rewards .reb-icn__left .star-icn {
+      width: 41px;
+      height: auto;
+      z-index: 2;
+      position: relative; }
+      .rb-bner__rewards .reb-icn__left .star-icn .star-xs {
+        animation: glow 2s infinite ease 0.4s;
+        opacity: 0;
+        left: -1px;
+        bottom: 14px;
+        width: 21px;
+        position: absolute;
+        display: block; }
+      .rb-bner__rewards .reb-icn__left .star-icn .star-md {
+        animation: glow 2s infinite ease;
+        right: 1px;
+        top: 5px;
+        position: absolute;
+        display: block;
+        width: 25px; }
+    .rb-bner__rewards .reb-icn__left .reb-icn {
+      animation: mover 1.1s infinite alternate;
+      width: 71px;
+      margin-left: -8px; }
+  .rb-bner__rewards .text-rewards {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin-left: 30px;
+    margin-right: 40px; }
+    .rb-bner__rewards .text-rewards br {
+      display: none; }
+  .rb-bner__rewards .reb-icn__right .reb-icn {
+    animation: mover2 1.1s infinite alternate;
+    width: 70px; }
+  .rb-bner__rewards .register-btn {
+    margin-right: 36px;
+    display: flex;
+    align-items: flex-start;
+    background: #000000;
+    border-radius: 22px;
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF; }
+  .rb-bner__rewards .close-bner-btn {
+    width: 20px;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block; }
+    .rb-bner__rewards .close-bner-btn svg {
+      width: 100%;
+      display: block;
+      height: auto; }
+
+.rb-bner__signin {
+  font-family: Be Vietnam Pro, sans-serif;
+  background: url("../img/reb-signinbg-web.jpg") center center no-repeat;
+  background-size: cover;
+  border-radius: 5px; }
+  .rb-bner__signin img {
+    width: 100%;
+    display: block;
+    height: auto; }
+  .rb-bner__signin .bner-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 18px; }
+  .rb-bner__signin .text-rewards {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #FFFFFF; }
+  .rb-bner__signin .reb-icn__right {
+    position: relative;
+    width: 105px;
+    display: flex;
+    align-items: stretch; }
+    .rb-bner__signin .reb-icn__right .star-icn {
+      margin-left: -9px;
+      width: 41px;
+      height: auto;
+      z-index: 2;
+      position: relative; }
+      .rb-bner__signin .reb-icn__right .star-icn .star-xs {
+        animation: glow 2s infinite ease;
+        left: 0;
+        bottom: 8px;
+        width: 21px;
+        position: absolute;
+        display: block; }
+      .rb-bner__signin .reb-icn__right .star-icn .star-md {
+        animation: glow 2s infinite ease 0.4s;
+        opacity: 0;
+        right: 0;
+        top: 10px;
+        position: absolute;
+        display: block;
+        width: 25px; }
+    .rb-bner__signin .reb-icn__right .reb-icn {
+      animation: mover 1.1s infinite alternate;
+      width: 70px; }
+
+@media screen and (max-width: 1040px) {
+  .rb-bner__rewards .reb-icn__right {
+    display: none; } }
+@media screen and (max-width: 768px) {
+  .rb-bner__rewards {
+    padding: 14px 13px 18px 18px; }
+    .rb-bner__rewards .reb-icn__left {
+      display: none; }
+    .rb-bner__rewards .reb-icn__right {
+      display: none; }
+    .rb-bner__rewards .close-bner-btn {
+      position: relative;
+      right: auto;
+      top: auto;
+      transform: none;
+      width: 16px; }
+    .rb-bner__rewards .text-rewards {
+      margin: 0;
+      font-size: 16px;
+      line-height: 120%; }
+      .rb-bner__rewards .text-rewards br {
+        display: block; }
+    .rb-bner__rewards .register-btn {
+      margin: 0 auto;
+      border-radius: 20px;
+      font-size: 14px;
+      line-height: 18px;
+      padding: 9px 8px; } }
+
+/*# sourceMappingURL=banner.css.map */
