@@ -240,7 +240,7 @@ a {
     line-height: 18px;
     padding: 9px 8px; } }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 653px) {
   .rb-bner__rewards {
     padding: 14px 13px 18px 18px; }
     .rb-bner__rewards .reb-icn__left {
@@ -255,6 +255,9 @@ a {
       -ms-transform: none;
       transform: none;
       width: 16px; }
+    .rb-bner__rewards .register-btn {
+      margin-left: auto;
+      margin-right: 18px; }
     .rb-bner__rewards .text-rewards {
       margin: 0; }
       .rb-bner__rewards .text-rewards br {

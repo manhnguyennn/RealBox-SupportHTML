@@ -231,7 +231,7 @@ a {
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 653px) {
   .rb-bner__rewards {
     padding: 14px 13px 18px 18px;
     .reb-icn__left {
@@ -247,6 +247,11 @@ a {
       transform: none;
       width: 16px;
     }
+    .register-btn{
+      margin-left: auto;
+      margin-right: 18px;
+    }
+
     .text-rewards {
       margin: 0;
       br {
