@@ -219,8 +219,9 @@ a {
     .thumb-vid {
       &:hover {
         .icn-play {
-          opacity: 1;
-          visibility: visible;
+          circle{
+            fill: #564B59;
+          }
         }
       }
       width: 260px;
@@ -235,9 +236,8 @@ a {
         transform: translateX(-50%) translateY(-50%);
         z-index: 2;
         display: block;
-        opacity: 0;
-        visibility: hidden;
-        transition: .15s linear;
+        opacity: 1;
+        //transition: .15s linear;
       }
     }
     img {

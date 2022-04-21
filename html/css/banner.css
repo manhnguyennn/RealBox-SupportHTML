@@ -251,9 +251,8 @@ a {
       flex-shrink: 0;
       display: block;
       position: relative; }
-      .rb-home-video .video-item-link .thumb-vid:hover .icn-play {
-        opacity: 1;
-        visibility: visible; }
+      .rb-home-video .video-item-link .thumb-vid:hover .icn-play circle {
+        fill: #564B59; }
       .rb-home-video .video-item-link .thumb-vid .icn-play {
         position: absolute;
         top: 50%;
@@ -263,11 +262,7 @@ a {
         transform: translateX(-50%) translateY(-50%);
         z-index: 2;
         display: block;
-        opacity: 0;
-        visibility: hidden;
-        -webkit-transition: .15s linear;
-        -o-transition: .15s linear;
-        transition: .15s linear; }
+        opacity: 1; }
     .rb-home-video .video-item-link img {
       width: 100%;
       height: 100%;
